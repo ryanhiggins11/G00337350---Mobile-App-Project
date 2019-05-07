@@ -1,14 +1,29 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      GAA Information App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+<ion-content padding class="bg-image">
+ <p>This App will provide you with all the information you need to know about the gaelic athlethic assocaiation!!</p>
+ Provinces of Ireland
+ <ol>
+    <li (click)="openUlster()"> Ulster<ion-icon ios="ios-football" md="md-football"></ion-icon></li>
+    <br>
+    <li (click)="openMunster()"> Munster<ion-icon ios="ios-football" md="md-football"></ion-icon></li>
+    <br>
+    <li (click)="openConnaught()"> Connaught<ion-icon ios="ios-football" md="md-football"></ion-icon></li>
+    <br>
+    <li (click)="openLeinster()"> Leinster<ion-icon ios="ios-football" md="md-football"></ion-icon></li>
+    <br>
+    <li (click)="openData()">App Review!<ion-icon name="clipboard"></ion-icon></li>
+    <br>
+  </ol>
+  <button ion-button small (click)="updateStatus()">Update Status</button>
+  
+
+
+    </ion-content>
+
